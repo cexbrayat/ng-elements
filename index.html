@@ -1,0 +1,22 @@
+<html>
+<script src="dist/main.bundle.js"></script>
+<body>
+  <div>Hello</div>
+  <ns-pony pony-model="{ name: 'Rainbow Dash' }"></ns-pony>
+</body>
+<script>
+  const ponyComponent = document.querySelector('ns-pony');
+  setTimeout(() => ponyComponent.ponyName = 'Rainbow Dash', 3000);
+  ponyComponent.addEventListener('selected', (event) => {
+    console.log('selected!', event);
+  });
+
+  setTimeout(() => {
+    const PonyComponent = customElements.get('ns-pony');
+    const otherPony = new PonyComponent();
+    otherPony.ponyName = 'Applejack';
+    document.body.appendChild(otherPony);
+  }, 3000);
+  
+</script>
+</html>
