@@ -3,38 +3,38 @@
 
 
 "@angular/common@cexbrayat/common-builds":
-  version "5.0.0-rc.8-bb807501c"
-  resolved "https://codeload.github.com/cexbrayat/common-builds/tar.gz/290e0ef4ad6b3aaeda6c33b1ff59016fa070602e"
+  version "5.1.0-beta.0-21bfaf226"
+  resolved "https://codeload.github.com/cexbrayat/common-builds/tar.gz/fc4e4eb1b1dd69c812aaaaba9d94c86d9e57bc14"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/compiler@cexbrayat/compiler-builds":
-  version "5.0.0-rc.8-bb807501c"
-  resolved "https://codeload.github.com/cexbrayat/compiler-builds/tar.gz/ca1ac34aec601e519403a849d76246a821258058"
+  version "5.1.0-beta.0-21bfaf226"
+  resolved "https://codeload.github.com/cexbrayat/compiler-builds/tar.gz/e94cf9bb171c3ff1b88640010b0c291d3f5ab69a"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/core@cexbrayat/core-builds":
-  version "5.0.0-rc.8-bb807501c"
-  resolved "https://codeload.github.com/cexbrayat/core-builds/tar.gz/82494b33b7ace6dbc2b6e4c63e98e99dcb30d9a3"
+  version "5.1.0-beta.0-21bfaf226"
+  resolved "https://codeload.github.com/cexbrayat/core-builds/tar.gz/c6e6a235e4d5ab8bfe085291861542a1470f1695"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/elements@cexbrayat/elements-builds":
-  version "5.0.0-rc.8-bb807501c"
-  resolved "https://codeload.github.com/cexbrayat/elements-builds/tar.gz/7b3fd903473fda7eb01b55941ce8f479a81d0059"
+  version "5.1.0-beta.0-21bfaf226"
+  resolved "https://codeload.github.com/cexbrayat/elements-builds/tar.gz/7d8004cfedadb7065ce7c0508f23b9a36cdde6b5"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/platform-browser-dynamic@cexbrayat/platform-browser-dynamic-builds":
-  version "5.0.0-rc.8-bb807501c"
-  resolved "https://codeload.github.com/cexbrayat/platform-browser-dynamic-builds/tar.gz/87e60d0f011aea492bce4f6467e1a650b51a7c26"
+  version "5.1.0-beta.0-21bfaf226"
+  resolved "https://codeload.github.com/cexbrayat/platform-browser-dynamic-builds/tar.gz/3a38c4af0be59e6bcbc24e6517db001639ac8764"
   dependencies:
     tslib "^1.7.1"
 
 "@angular/platform-browser@cexbrayat/platform-browser-builds":
-  version "5.0.0-rc.8-bb807501c"
-  resolved "https://codeload.github.com/cexbrayat/platform-browser-builds/tar.gz/2e93ea1b840ddc822df69bdf24b2487a04dcdbf3"
+  version "5.1.0-beta.0-21bfaf226"
+  resolved "https://codeload.github.com/cexbrayat/platform-browser-builds/tar.gz/8bf49e3528f248fe1122188610f3d80ebc95e4b7"
   dependencies:
     tslib "^1.7.1"
 
@@ -440,8 +440,8 @@ cryptiles@2.x.x:
     boom "2.x.x"
 
 crypto-browserify@^3.11.0:
-  version "3.11.1"
-  resolved "https://registry.yarnpkg.com/crypto-browserify/-/crypto-browserify-3.11.1.tgz#948945efc6757a400d6e5e5af47194d10064279f"
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/crypto-browserify/-/crypto-browserify-3.12.0.tgz#396cf9f3137f03e4b8e532c58f698254e00f80ec"
   dependencies:
     browserify-cipher "^1.0.0"
     browserify-sign "^4.0.0"
@@ -453,6 +453,7 @@ crypto-browserify@^3.11.0:
     pbkdf2 "^3.0.3"
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
+    randomfill "^1.0.3"
 
 d@1:
   version "1.0.0"
@@ -498,6 +499,10 @@ des.js@^1.0.0:
   dependencies:
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
+
+detect-libc@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-1.0.2.tgz#71ad5d204bf17a6a6ca8f450c61454066ef461e1"
 
 diffie-hellman@^5.0.0:
   version "5.0.2"
@@ -1258,9 +1263,10 @@ node-libs-browser@^2.0.0:
     vm-browserify "0.0.4"
 
 node-pre-gyp@^0.6.36:
-  version "0.6.38"
-  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.38.tgz#e92a20f83416415bb4086f6d1fb78b3da73d113d"
+  version "0.6.39"
+  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.39.tgz#c00e96860b23c0e1420ac7befc5044e1d78d8649"
   dependencies:
+    detect-libc "^1.0.2"
     hawk "3.1.3"
     mkdirp "^0.5.1"
     nopt "^4.0.1"
@@ -1501,10 +1507,17 @@ randomatic@^1.1.3:
     is-number "^3.0.0"
     kind-of "^4.0.0"
 
-randombytes@^2.0.0, randombytes@^2.0.1:
+randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.0.5.tgz#dc009a246b8d09a177b4b7a0ae77bc570f4b1b79"
   dependencies:
+    safe-buffer "^5.1.0"
+
+randomfill@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/randomfill/-/randomfill-1.0.3.tgz#b96b7df587f01dd91726c418f30553b1418e3d62"
+  dependencies:
+    randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
 rc@^1.1.7:
@@ -1681,9 +1694,13 @@ source-list-map@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.0.tgz#aaa47403f7b245a92fbc97ea08f250d6087ed085"
 
-source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
+source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
+
+source-map@~0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
 spdx-correct@~1.0.0:
   version "1.0.2"
@@ -1932,11 +1949,11 @@ watchpack@^1.4.0:
     graceful-fs "^4.1.2"
 
 webpack-sources@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.0.1.tgz#c7356436a4d13123be2e2426a05d1dad9cbe65cf"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-1.0.2.tgz#d0148ec083b3b5ccef1035a6b3ec16442983b27a"
   dependencies:
     source-list-map "^2.0.0"
-    source-map "~0.5.3"
+    source-map "~0.6.1"
 
 webpack@^3.8.1:
   version "3.8.1"
